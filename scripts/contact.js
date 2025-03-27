@@ -1,7 +1,7 @@
 /* 
 Assignment 3: Using JavaScript and Deploying a Website
 File Name: contact.js
-Description: howcases skills in CSS, JavaScript, and website deployment via GitHub. It involves enhancing a provided website's styling
+Description: showcasing skills in CSS, JavaScript, and website deployment via GitHub. It involves enhancing a provided website's styling
 and functionality and deploying it using GitHub Pages.
 Author: Jenna Hackett, ID: 000969721
 Version: March 27th, 2025
