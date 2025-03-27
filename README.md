@@ -1,2 +1,3 @@
 # Assignment2_JavaScript
-Demostarting the ability to use CSS and JavaScript, and use GitHub for deployment.
+
+This project showcases skills in CSS, JavaScript, and website deployment via GitHub. It involves enhancing a provided website's styling and functionality, deploying it using GitHub Pages, and submitting the finalized work, including validations, as per the instructor's guidelines.
