@@ -1,3 +1,12 @@
+/* 
+Assignment 3: Using JavaScript and Deploying a Website
+File Name: booking.js
+Description: howcases skills in CSS, JavaScript, and website deployment via GitHub. It involves enhancing a provided website's styling
+and functionality and deploying it using GitHub Pages.
+Author: Jenna Hackett, ID: 000969721
+Version: March 27th, 2025
+*/
+
 /********* create variables *********/
 // useful variables might be: the cost per day, the number of days selected, and elements on the screen that will be clicked or will need to be modified. 
 // Do any of these variables need to be initialized when the page is loaded? 
