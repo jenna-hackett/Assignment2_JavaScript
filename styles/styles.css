@@ -73,13 +73,16 @@ a {
     color: black;
 }
 
-a:hover {
+main a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-
-
-
+.fake-button:hover, .blue-hover:hover {
+    text-decoration: underline;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
 
 
 
@@ -88,27 +91,73 @@ a:hover {
 /* TO DO:
     - the header and footer will be the same mustard-yellow as the buttons.
     - the header is 150px tall.
-    - the header image is 100px wide and tall with 25px of space above, below, and on its left, and the top-level heading is centered in the remaining width.
+    - the header image is 100px wide and tall with 25px of space above, below, and on its left, 
+        *********and the top-level heading is centered in the remaining width.
     - there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
+header, footer {
+    background-color: #E5AF42;
+}
 
+header {
+    height: 150px;
+    padding-bottom: 25px;
+}
 
+header img {
+    width: 100px;
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+footer {
+    height: 60px;
+    font-weight: 200;
+    text-align: center;
+}
 
 
 
 /************* index page *************/
 
 /* TO-DO: 
-    - this is a 2-column layout: text on the left, and an image on the right. The image will be 300px wide, with 25px between it and the text column, which takes up the remaining space. The image will also have 50px of space below.
+    - this is a 2-column layout: text on the left, and an image on the right. The image will be 300px wide,
+        with 25px between it and the text column, which takes up the remaining space.
+            The image will also have 50px of space below.
     - the h2 on this page will have a line-height equal to the font size.
     - each paragraph on this page will have 12px of space beneath it.
     - each fake-button on this page will be 250px wide with 150px of space between them.
-    - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
+    - the pair of fake-buttons will be centered on the page.
+        HINT: can calculate the required margin to make them appear to be centered.
 */
 
+.index img {
+    width: 300px;
+    /*25px between img and column, taking up remaining space??? flexbox i think*/
+    padding-bottom: 50px;
+}
 
+.index h2 {
+    line-height: 36px;
+}
+
+.index p {
+    padding-bottom: 12px;
+}
+
+.index .fake-button {
+    width: 250px;
+    padding-right: 150px;
+    text-align: center;
+}
 
 
 
