@@ -24,6 +24,9 @@ body {
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
+.flex {
+    display: flex;
+}
 
  
 
@@ -33,8 +36,10 @@ body {
     - first-level headings are size 48px, centered vertically and horizontally in the available space.
     - 2nd-level headings have a font size of 36px, and 12px of space below.
     - any element with the .large-text class has a font size of 24px.
-    - any element with the .fake-button class will have a background colour of mustard yellow (see colour palette above), be center aligned, with a line-height of 3 and a solid black border that is 1px wide.
-    - all anchors will have the underline removed and be black in colour. all anchors in the main and footer sections will be underlined in their hover-state.
+    - any element with the .fake-button class will have a background colour of mustard yellow (see colour palette above),
+        be center aligned, with a line-height of 3 and a solid black border that is 1px wide.
+    - all anchors will have the underline removed and be black in colour. all anchors in the main and footer sections will be underlined
+        in their hover-state.
     - the hover-state of .fake-button and .blue-hover elements will:
         - add an underline, 
         - set the background-colour to cornflower blue (see colour palette above),
@@ -42,6 +47,35 @@ body {
         - change the cursor to pointer.
 */
 
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    padding-bottom: 12px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.fake-button {
+    background-color: #E5AF42;
+    align-items: center;
+    line-height: 3px;
+    border: solid 1px black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 
 
