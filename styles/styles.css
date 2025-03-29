@@ -115,8 +115,9 @@ main {
 
 footer {
     height: 60px;
+    padding: 20px 0px 20px 0px;
     font-weight: 200;
-    text-align: center;
+    justify-items: center;
 }
 
 
@@ -145,6 +146,9 @@ footer {
     margin-bottom: 12px;
 }
 
+/*this isnt quite right... yet. the booking button needs to be further right, while the contact button stays
+exactly where it is. The buttons also need to be slightly longer in width per sample given... but the
+instructions say they should only be 250px wide...*/
 .index .fake-button {
     width: 250px;
     text-align: center;
