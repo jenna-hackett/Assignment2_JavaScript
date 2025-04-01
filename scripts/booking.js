@@ -4,7 +4,7 @@ File Name: booking.js
 Description: Showcasing skills in CSS, JavaScript, and website deployment via GitHub. It involves enhancing a provided website's styling
 and functionality and deploying it using GitHub Pages.
 Author: Jenna Hackett, ID: 000969721
-Version: March 27th, 2025
+Version: March 31st, 2025
 */
 
 /********* create variables *********/

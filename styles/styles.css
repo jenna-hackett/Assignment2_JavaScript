@@ -57,12 +57,13 @@ h2 {
     padding-bottom: 12px;
 }
 
-/**/
+/*any class labelled as .large-text has a font size of (24px) */
 .large-text {
     font-size: 24px;
 }
 
-/**/
+/*any class labelled as .fake-button has a background color of mustard yellow, are center aligned, have a line height
+of (3px) and a border which is solid, (1px) and black */
 .fake-button {
     background-color: #E5AF42;
     align-items: center;
@@ -70,18 +71,19 @@ h2 {
     border: solid 1px black;
 }
 
-/**/
+/*anchors will not have any text decoration until hovered over. the text will be black. */
 a {
     text-decoration: none;
     color: black;
 }
 
-/**/
+/*once hovered over, the anchors and the text inside the buttons will be underlined */
 main a:hover, footer a:hover, .fake-button:hover, .blue-hover:hover {
     text-decoration: underline;
 }
 
-/**/
+/*once hovered over, the buttons will have a background color of corn flower blue, the text will become white 
+and the cursor will change to a pointer */
 .fake-button:hover, .blue-hover:hover {
     background-color: cornflowerblue;
     color: white;
