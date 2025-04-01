@@ -100,25 +100,30 @@ and the cursor will change to a pointer */
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
+/**/
 header, footer {
     background-color: #E5AF42;
 }
 
+/**/
 header {
     height: 150px;
     margin-bottom: 25px;
 }
 
+/**/
 header img {
     width: 100px;
     height: 100px;
     padding: 25px 0px 25px 25px;
 }
 
+/**/
 main {
     padding-bottom: 50px;
 }
 
+/**/
 footer {
     height: 60px;
     padding: 20px 0px 20px 0px;
@@ -138,25 +143,30 @@ footer {
         HINT: can calculate the required margin to make them appear to be centered.
 */
 
+/**/
 .index img {
     width: 300px;
     margin: 0px 0px 50px 25px;
 }
 
+/**/
 .index h2 {
     line-height: 36px;
 }
 
+/**/
 .index p {
     margin-bottom: 12px;
 }
 
+/**/
 .index .fake-button {
     width: 250px;
     text-align: center;
     padding: 30px 20px;
 }
 
+/**/
 .index .flex {
     display: flex;
     justify-content: center;
@@ -179,6 +189,7 @@ footer {
 
 */
 
+/**/
 .booking-page {
     width: 600px;
     margin: 0 auto;
@@ -186,6 +197,7 @@ footer {
     font-size: 18px;
 }
 
+/**/
 .day-selector {
     display: flex;
     justify-content: center;
@@ -193,27 +205,31 @@ footer {
     margin-bottom: 12px;
 }
 
+/**/
 .day-selector li {
     width: 60px;
     border: solid 1px black;
 }
 
+/**/
 .small-button {
     border: solid 1px black;
     padding: 5px;
 }
 
+/**/
 .top-margin {
     margin: 24px 0px 12px 0px;
 }
 
-
+/**/
 #clear-button {
     width: 200px;
     margin: 0 auto;
     padding: 25px 0px 25px 0px;
 }
 
+/**/
 .clicked {
     background-color: #E5AF42;
 }
@@ -229,11 +245,13 @@ footer {
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+/**/
 #contact-page main {
     height: 420px;
     margin: 0 auto;
 }
 
+/**/
 #contact-page h2 {
     text-align: center;
 }
@@ -244,16 +262,19 @@ form {
     margin: 0 auto;
 }
 
+/**/
 label {
     width: 150px;
     text-align: right;
     margin-right: 24px;
 }
 
+/**/
 input, textarea {
     width: 300px;
 }
 
+/**/
 input, textarea, button {
     font-family: 'Montserrat', sans-serif;
     line-height: 24px;
@@ -262,11 +283,12 @@ input, textarea, button {
     margin-bottom: 24px;
 }
 
+/**/
 textarea {
     height: 150px;
 }
 
-
+/**/
 #submit-button {
     width: 300px;
     margin-left: 174px;  /* input column starts after 150px (label) + 24px (margin) = 174px */
