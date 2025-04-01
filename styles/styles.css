@@ -62,7 +62,7 @@ h2 {
     font-size: 24px;
 }
 
-/*any class labelled as .fake-button has a background color of mustard yellow, are center aligned, have a line height
+/*any class labelled as .fake-button has a background color of mustard yellow (#E5AF42), are center aligned, have a line height
 of (3px) and a border which is solid, (1px) and black */
 .fake-button {
     background-color: #E5AF42;
@@ -78,13 +78,17 @@ a {
 }
 
 /*once hovered over, the anchors and the text inside the buttons will be underlined */
-main a:hover, footer a:hover, .fake-button:hover, .blue-hover:hover {
+main a:hover,
+footer a:hover,
+.fake-button:hover,
+.blue-hover:hover {
     text-decoration: underline;
 }
 
 /*once hovered over, the buttons will have a background color of corn flower blue, the text will become white 
 and the cursor will change to a pointer */
-.fake-button:hover, .blue-hover:hover {
+.fake-button:hover,
+.blue-hover:hover {
     background-color: cornflowerblue;
     color: white;
     cursor: pointer;
@@ -100,30 +104,31 @@ and the cursor will change to a pointer */
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
-/**/
-header, footer {
+/*the header and footer both have a background color of mustard yellow (#E5AF42)*/
+header,
+footer {
     background-color: #E5AF42;
 }
 
-/**/
+/*the header has a height of (150px) and bottom margin of (25ps)*/
 header {
     height: 150px;
     margin-bottom: 25px;
 }
 
-/**/
+/*the image in the header has a width and height of (100px), and padding on the top, bottom and left of (25px)*/
 header img {
     width: 100px;
     height: 100px;
     padding: 25px 0px 25px 25px;
 }
 
-/**/
+/*the main content, has a padding-bottom of (50px)*/
 main {
     padding-bottom: 50px;
 }
 
-/**/
+/*the footer has a height of (60px), padding on the top and bottom of (20px), the font weight is (200), and the text is aligned center */
 footer {
     height: 60px;
     padding: 20px 0px 20px 0px;
@@ -143,34 +148,34 @@ footer {
         HINT: can calculate the required margin to make them appear to be centered.
 */
 
-/**/
+/*the image on the index page, has a (300px) width, a bottom margin of (50px), and a left margin of (25px)*/
 .index img {
     width: 300px;
     margin: 0px 0px 50px 25px;
 }
 
-/**/
+/*the level 2 heading on the index page has a line-height of (36px)*/
 .index h2 {
     line-height: 36px;
 }
 
-/**/
+/*the paragraph on the index page has a margin-bottom of (12px)*/
 .index p {
     margin-bottom: 12px;
 }
 
-/**/
+/*the .fakebutton on the index page has a width of (250px), padding on the top/bottom of (30px), and padding on the left/right of (20px)*/
 .index .fake-button {
     width: 250px;
-    text-align: center;
     padding: 30px 20px;
+    text-align: center;
 }
 
-/**/
+/*.flex content (buttons) on the index page displays are set to flex, there is a 150px gap between them, and the content is center justified.*/
 .index .flex {
     display: flex;
-    justify-content: center;
     gap: 150px;
+    justify-content: center;
 }
 
 
@@ -189,7 +194,8 @@ footer {
 
 */
 
-/**/
+/*the booking page has a width of (600px) and the margin set to 0 auto, to center the content.
+the text is aligned center, and the font size is (18px)*/
 .booking-page {
     width: 600px;
     margin: 0 auto;
@@ -197,7 +203,8 @@ footer {
     font-size: 18px;
 }
 
-/**/
+/*the .dayselectors on the booking page has a flex display, content is center justified with a gap of 
+(20px), and a bottom margin of (12px)*/
 .day-selector {
     display: flex;
     justify-content: center;
@@ -205,35 +212,39 @@ footer {
     margin-bottom: 12px;
 }
 
-/**/
+/*the .dayselector buttons have a width of (60px) each*/
 .day-selector li {
     width: 60px;
+}
+
+/*the .dayselector buttons and the full/half day buttons, have a solid, (1px), black border.*/
+.day-selector li,
+.small-button {
     border: solid 1px black;
 }
 
-/**/
+/*the full/half day buttons have a padding on all sides of (5px)*/
 .small-button {
-    border: solid 1px black;
     padding: 5px;
 }
 
-/**/
+/*content tagged as class .top-margin, has margins of (24px) on the top and (12px) on the bottom*/
 .top-margin {
     margin: 24px 0px 12px 0px;
 }
 
-/**/
+/*the clear-days button will have a width of (200px), margin 0 auto to center, and a padding of
+(25px) on top and bottom*/
 #clear-button {
     width: 200px;
     margin: 0 auto;
-    padding: 25px 0px 25px 0px;
+    padding: 25px 0px;
 }
 
-/**/
+/*the .clicked class of buttons will have a background color of mustard yellow (#E5AF42)*/
 .clicked {
     background-color: #E5AF42;
 }
-
 
 
 /************* contact page *************/
@@ -245,37 +256,43 @@ footer {
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
-/**/
+/*the main content on the contact page has a height of (420px), and margin set 0 auto to be centered*/
 #contact-page main {
     height: 420px;
     margin: 0 auto;
 }
 
-/**/
+/*the 2nd level headings on the contact page, will be center aligned.*/
 #contact-page h2 {
     text-align: center;
 }
 
-/* Center the form by making it 474px wide (150px + 24px + 300px) and using margin: 0 auto;*/
+/* the form is centered using margin 0 uato, and making it 474px wide (150px(label) + 24px(margin) + 300px(inputs)*/
 form {
     width: 474px;
     margin: 0 auto;
 }
 
-/**/
+/*labels all have a width of (150px), the text is aligned to the right, and the right margin is
+set at (24px)*/
 label {
     width: 150px;
     text-align: right;
     margin-right: 24px;
 }
 
-/**/
-input, textarea {
+/*the inputs and the text area have wdiths set to (300px)*/
+input,
+textarea {
     width: 300px;
 }
 
-/**/
-input, textarea, button {
+/*the inputs, the text area, and the button have the same text as the rest of the page (), a (24px) line-height,
+the font size has been set to (16px). They have solid, (1px) black borders, and the bottom margin is set to 
+(24px)*/
+input,
+textarea,
+button {
     font-family: 'Montserrat', sans-serif;
     line-height: 24px;
     font-size: 16px;
@@ -283,14 +300,15 @@ input, textarea, button {
     margin-bottom: 24px;
 }
 
-/**/
+/*the text area has a height of (150px)*/
 textarea {
     height: 150px;
 }
 
-/**/
+/*the submit button has a width of (300px), the same as the input field and text area, a left margin set to (174px),
+and padding on the top/bottom of (25px).*/
 #submit-button {
     width: 300px;
-    margin-left: 174px;  /* input column starts after 150px (label) + 24px (margin) = 174px */
-    padding: 25px 0px 25px 0px;
+    margin-left: 174px;  /* input column starts after 150px(label) + 24px(margin) = 174px */
+    padding: 25px 0px;
 }
