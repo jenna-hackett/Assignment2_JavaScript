@@ -85,7 +85,7 @@ footer a:hover,
     text-decoration: underline;
 }
 
-/*once hovered over, the buttons will have a background color of corn flower blue, the text will become white 
+/*once hovered over, the buttons will have a background color of cornflower blue (#4278e5), the text will become white 
 and the cursor will change to a pointer */
 .fake-button:hover,
 .blue-hover:hover {
