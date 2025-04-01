@@ -24,6 +24,7 @@ body {
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
+/* elements with .flex have their display set to (flex)*/
 .flex {
     display: flex;
 }
@@ -35,10 +36,8 @@ body {
     - first-level headings are size 48px, centered vertically and horizontally in the available space.
     - 2nd-level headings have a font size of 36px, and 12px of space below.
     - any element with the .large-text class has a font size of 24px.
-    - any element with the .fake-button class will have a background colour of mustard yellow (see colour palette above),
-        be center aligned, with a line-height of 3 and a solid black border that is 1px wide.
-    - all anchors will have the underline removed and be black in colour. all anchors in the main and footer sections will be underlined
-        in their hover-state.
+    - any element with the .fake-button class will have a background colour of mustard yellow (see colour palette above), be center aligned, with a line-height of 3 and a solid black border that is 1px wide.
+    - all anchors will have the underline removed and be black in colour. all anchors in the main and footer sections will be underlined in their hover-state.
     - the hover-state of .fake-button and .blue-hover elements will:
         - add an underline, 
         - set the background-colour to cornflower blue (see colour palette above),
@@ -46,21 +45,24 @@ body {
         - change the cursor to pointer.
 */
 
+/*level 1 headings have a (48px) font size, (110px) padding on the left, (40px) padding on the right */
 h1 {
     font-size: 48px;
-    padding-left: 110px;
-    padding-top: 40px;
+    padding: 40px 0px 0px 110px;
 }
 
+/*level 2 headings have a (36px) font size and bottom padding of (12px) */
 h2 {
     font-size: 36px;
     padding-bottom: 12px;
 }
 
+/**/
 .large-text {
     font-size: 24px;
 }
 
+/**/
 .fake-button {
     background-color: #E5AF42;
     align-items: center;
@@ -68,17 +70,19 @@ h2 {
     border: solid 1px black;
 }
 
+/**/
 a {
     text-decoration: none;
     color: black;
 }
 
-main a:hover, footer a:hover {
+/**/
+main a:hover, footer a:hover, .fake-button:hover, .blue-hover:hover {
     text-decoration: underline;
 }
 
+/**/
 .fake-button:hover, .blue-hover:hover {
-    text-decoration: underline;
     background-color: cornflowerblue;
     color: white;
     cursor: pointer;
@@ -117,15 +121,14 @@ footer {
     height: 60px;
     padding: 20px 0px 20px 0px;
     font-weight: 200;
-    justify-items: center;
+    text-align: center;
 }
 
 
 /************* index page *************/
 
 /* TO-DO: 
-    - this is a 2-column layout: text on the left, and an image on the right. The image will be 300px wide,
-        with 25px between it and the text column, which takes up the remaining space. The image will also have 50px of space below.
+    - this is a 2-column layout: text on the left, and an image on the right. The image will be 300px wide, with 25px between it and the text column, which takes up the remaining space. The image will also have 50px of space below.
     - the h2 on this page will have a line-height equal to the font size.
     - each paragraph on this page will have 12px of space beneath it.
     - each fake-button on this page will be 250px wide with 150px of space between them.
@@ -146,17 +149,17 @@ footer {
     margin-bottom: 12px;
 }
 
-/*this isnt quite right... yet. the booking button needs to be further right, while the contact button stays
-exactly where it is. The buttons also need to be slightly longer in width per sample given... but the
-instructions say they should only be 250px wide...*/
 .index .fake-button {
     width: 250px;
     text-align: center;
     padding: 30px 20px;
-    margin-right: 150px;
-    margin-left: 100px;
 }
 
+.index .flex {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
 
 
 
@@ -174,15 +177,44 @@ instructions say they should only be 250px wide...*/
 
 */
 
+.booking-page {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.day-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 12px;
+}
+
+.day-selector li {
+    width: 60px;
+    border: solid 1px black;
+}
+
+.small-button {
+    border: solid 1px black;
+    padding: 5px;
+}
+
+.top-margin {
+    margin: 24px 0px 12px 0px;
+}
 
 
+#clear-button {
+    width: 200px;
+    margin: 0 auto;
+    padding: 25px 0px 25px 0px;
+}
 
-
-
-
-
-
-
+.clicked {
+    background-color: #E5AF42;
+}
 
 
 
@@ -195,6 +227,46 @@ instructions say they should only be 250px wide...*/
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+#contact-page main {
+    height: 420px;
+    margin: 0 auto;
+}
+
+#contact-page h2 {
+    text-align: center;
+}
+
+/* Center the form by making it 474px wide (150px + 24px + 300px) and using margin: 0 auto;*/
+form {
+    width: 474px;
+    margin: 0 auto;
+}
+
+label {
+    width: 150px;
+    text-align: right;
+    margin-right: 24px;
+}
+
+input, textarea {
+    width: 300px;
+}
+
+input, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    border: solid 1px black;
+    margin-bottom: 24px;
+}
+
+textarea {
+    height: 150px;
+}
 
 
-
+#submit-button {
+    width: 300px;
+    margin-left: 174px;  /* input column starts after 150px (label) + 24px (margin) = 174px */
+    padding: 25px 0px 25px 0px;
+}
