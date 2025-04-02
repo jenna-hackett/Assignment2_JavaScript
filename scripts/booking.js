@@ -52,7 +52,7 @@ function daysClicked(event) {
 }
 
 // adding event listeners to each day.
-dayElements.forEach(day => {
+dayElements.forEach(function(day) {
     day.addEventListener("click", daysClicked);
 });
 
